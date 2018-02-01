@@ -13,7 +13,7 @@ from utils import init_logger, get_logger, read_masks, read_params, create_submi
 
 logger = get_logger()
 ctx = neptune.Context()
-params = read_params()
+params = read_params(ctx)
 
 
 @click.group()
